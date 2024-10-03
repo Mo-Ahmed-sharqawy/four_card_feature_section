@@ -1,0 +1,117 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+main {
+    max-width: 1200px;
+}
+
+main h1:first-child {
+    font-size: 3rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+
+main h1:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+}
+
+main > p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: hsl(0deg 0% 58.11%);
+    max-width: 450px;
+    font-weight: 400;
+    margin-inline: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+main .container .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    min-height: 220px;
+    max-width: 330px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #EEE;
+}
+
+main .container .one {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+main .container .two {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+main .container .three {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+main .container .four {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.one, .three {
+    transform: translateY(calc(50% + 10px));
+}
+
+main .container .card h3 {
+    font-size: 1.8rem;
+    color: hsl(234, 12%, 34%);
+}
+
+main .container .card p {
+    font-size: 1.3rem;
+    color: hsl(229, 6%, 66%);
+    transform: translateY(-10px);
+}
+
+main .container .card img {
+    display: block;
+    max-width: 50px;
+    align-self: flex-end;
+    transform: translateY(15px);
+}
+
+@media (max-width: 69.375rem) {
+    .one, .three {
+        transform: translate(0);
+    }
+}
